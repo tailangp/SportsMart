@@ -3,3 +3,24 @@
 ################################################################################
 
 /packages
+/SportMart.Models.Test/bin/Debug
+/SportMart.Models.Test/obj/Debug
+/SportsMart.Database/bin/Debug
+/SportsMart.Database/Import Schema Logs
+/SportsMart.Database/obj/Debug
+/SportsMart.DbRepository.Test/bin/Debug
+/SportsMart.DbRepository.Test/FakesAssemblies
+/SportsMart.DbRepository.Test/obj/Debug
+/SportsMart.DbRespository/bin
+/SportsMart.DbRespository/obj/Debug
+/SportsMart.Models/bin/Debug
+/SportsMart.Models/obj/Debug
+/SportsMart.Service/bin/Debug
+/SportsMart.Service/obj/Debug
+/SportsMart.Services.Test/obj/Debug
+/SportsMart.Web/bin
+/TestResults
+/SportsMart.Web.Tests/obj/Debug
+/SportsMart.Web.Tests/bin/Debug
+/SportsMart.Web/obj/Debug
+/SportsMart.Web/Content/node_modules

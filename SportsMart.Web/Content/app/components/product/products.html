@@ -1,0 +1,25 @@
+﻿<!-- ko with: home -->
+<div class="jumbotron" ng-controller="product">
+    <h1>{{name}}</h1>
+    <p class="lead">Sports Mart is one stop shop for purchasing and selling sports goods</p>
+    <div>
+        <table class="table table-responsive table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="product in products" >
+                    <td>{{product.id}}</td>
+                    <td>{{product.name}}</td>
+                    <td>{{product.price}}</td>
+                    <td>{{product.category.name}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
