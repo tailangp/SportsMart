@@ -25,3 +25,5 @@
 /SportsMart.Web/obj/Debug
 /SportsMart.Web/Content/node_modules
 /SportsMart.Web/Content/typings
+/SportsMart.Web/Content/dist
+/SportsMart.Web/Content/fonts
