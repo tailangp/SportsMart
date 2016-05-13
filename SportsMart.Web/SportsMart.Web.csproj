@@ -247,15 +247,16 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\app\components\product\products.html" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
-    <Content Include="Content\app\components\home\contact.html" />
+    <Content Include="Content\app\home\about.html" />
+    <Content Include="Content\app\home\contact.html" />
+    <Content Include="Content\app\home\home.html" />
+    <Content Include="Content\app\product\products.html" />
+    <Content Include="Content\gulpfile.js" />
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Content\app\components\home\home.html" />
-    <Content Include="Content\app\components\home\about.html" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
     <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
@@ -315,13 +316,18 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Content\app\app.module.ts" />
-    <TypeScriptCompile Include="Content\app\components\home\aboutController.ts" />
-    <TypeScriptCompile Include="Content\app\components\home\contactController.ts" />
-    <TypeScriptCompile Include="Content\app\components\home\homeController.ts" />
-    <TypeScriptCompile Include="Content\app\components\product\productsController.ts" />
+    <TypeScriptCompile Include="Content\app\app.service.ts" />
+    <TypeScriptCompile Include="Content\app\home\aboutController.ts" />
+    <TypeScriptCompile Include="Content\app\home\contactController.ts" />
+    <TypeScriptCompile Include="Content\app\home\homeController.ts" />
+    <TypeScriptCompile Include="Content\app\product\productsController.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="Content\.vscode\tasks.json" />
+    <Content Include="Content\package.json" />
+    <Content Include="Content\tsconfig.json" />
+    <Content Include="Content\tsd.json" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
