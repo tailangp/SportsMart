@@ -8,10 +8,12 @@ var sass = require('gulp-sass'); //Converts sass to css
 //var autoprefixer = require('gulp-autoprefixer');
 var concatUtil = require('gulp-concat-util');
 var addsrc = require('gulp-add-src');
+var jasmine = require('gulp-jasmine');
 
 var distFolder = 'dist'
+var testFolder = 'spec'
 
-gulp.task('default', ['appjs','js-lib','appcss','fonts']);
+gulp.task('default', ['appjs','testjs','js-lib','appcss','fonts']);
 
 // compile ts files
 //  name: name of target file
@@ -28,11 +30,33 @@ var compileTs = function (name, src) {
         .pipe(gulp.dest(distFolder))
 }
 
+testGlob = ['app/**/*test.ts*', 'typings/**/*ts*']
+//compile test cases and run
+gulp.task('testjs', function (cb) {
+     gulp.src(testGlob)
+        .pipe(sourcemaps.init())
+        .pipe(ts({
+            target: 'es5',
+            sortOutput: true
+        }))
+        .pipe(concat('testspec.js'))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(testFolder))
+    
+    //Run the test cases
+    gulp.src([
+            'spec/testspec.js',
+        ])
+        .pipe(jasmine())
+})
+
 // compile ts folder ts files
-tsGlob = ['app/**/*.ts*', "typings/**/*ts*"]
+tsGlob = ['app/**/*.ts*', 'typings/**/*ts*']
 gulp.task('appjs', function (cb) {
     return compileTs('app.js', tsGlob)
 })
+
+
 
 // compile third party libraries
 gulp.task('js-lib', function () {

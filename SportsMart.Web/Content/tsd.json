@@ -10,6 +10,9 @@
     },
     "angularjs/angular.d.ts": {
       "commit": "73f7bb99692823f1811817f9753a02b57af5305e"
+    },
+    "jasmine/jasmine.d.ts": {
+      "commit": "b4bbee8f60560c34bc74b154b283f7ce83a31dae"
     }
   }
 }
